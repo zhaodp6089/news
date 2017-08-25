@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  news_learning
+//
+//  Created by admin on 2017/8/23.
+//  Copyright © 2017年 com.taihe. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "const.h"
+
+// 最低只需传两个数组即可完成tabBar搭建
+#import <CYLTabBarController.h>
+
+#endif /* PrefixHeader_pch */
