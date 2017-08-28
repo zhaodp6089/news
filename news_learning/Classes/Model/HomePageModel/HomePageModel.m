@@ -33,15 +33,16 @@
 
 @implementation HomeResultFocusimgModel
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
-    return @{@"ID":@"id"};
+    return @{@"ID":@"id", @"anewstype":@"newstype"};
 }
 @end
 
 
 
 @implementation HomeResultNewslistModel
+
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
-    return @{@"ID":@"id", @"anewstype":@"newstype"};
+    return @{@"ID":@"id"};
 }
 @end
 
