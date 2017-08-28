@@ -10,6 +10,13 @@ target 'news_learning' do
 	pod 'CYLTabBarController', '~> 1.13.1'
     pod 'FMDB', '~> 2.7.2'
     pod 'AFNetworking', '~> 3.1.0'
+    pod 'WMPageController', '~> 2.4.0'
+    pod 'iCarousel', '~> 1.8.3'
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'BlocksKit', '~> 2.2.5'
+    pod 'CocoaLumberjack', '~> 3.2.1'
+    pod 'SDWebImage', '~> 4.1.0'
+    pod 'SDAutoLayout', '~> 2.2.0'
 
   target 'news_learningTests' do
     inherit! :search_paths

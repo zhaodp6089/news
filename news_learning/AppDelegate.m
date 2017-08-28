@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import "OneViewController.h"
+#import "twoViewController.h"
+#import "threeViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +22,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    CYLTabBarController *cylTabbar = [CYLTabBarController new];
+    NSDictionary *dic1 = @{
+                           CYLTabBarItemTitle : @"首页",
+                           CYLTabBarItemImage : @"news",
+                           CYLTabBarItemSelectedImage : @"newsblue",
+                           };
+    NSDictionary *dic2 = @{
+                           CYLTabBarItemTitle : @"",
+                           CYLTabBarItemImage : @"midelePlus_Unselected",
+                           CYLTabBarItemSelectedImage : @"middlePlus_Selected",
+                           };
+    NSDictionary *dic3 = @{
+                           CYLTabBarItemTitle : @"尾页",
+                           CYLTabBarItemImage : @"my",
+                           CYLTabBarItemSelectedImage : @"myblue",
+                           };
+    cylTabbar.tabBarItemsAttributes = @[dic1, dic2, dic3];
+    
+    cylTabbar.viewControllers = @[[OneViewController defultNavi], [twoViewController defultNavi], [threeViewController defultNavi]];
+    
+    [_window setRootViewController:cylTabbar];
     
     return YES;
 }

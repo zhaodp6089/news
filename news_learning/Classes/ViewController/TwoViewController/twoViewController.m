@@ -14,6 +14,15 @@
 
 @implementation twoViewController
 
++ (UINavigationController *)defultNavi {
+    static UINavigationController *navi = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        navi = [[BaseNavigationController alloc] initWithRootViewController:[[self class] new]];
+    });
+    return navi;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

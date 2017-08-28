@@ -17,6 +17,11 @@
 		841D73971F4D288D00F31BF6 /* news_learningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73961F4D288D00F31BF6 /* news_learningTests.m */; };
 		841D73A21F4D288E00F31BF6 /* news_learningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73A11F4D288E00F31BF6 /* news_learningUITests.m */; };
 		841D73C11F4E889700F31BF6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73C01F4E889700F31BF6 /* BaseViewController.m */; };
+		841D73C71F50013500F31BF6 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73C61F50013500F31BF6 /* OneViewController.m */; };
+		841D73CA1F50014200F31BF6 /* twoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73C91F50014200F31BF6 /* twoViewController.m */; };
+		841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73CC1F50014D00F31BF6 /* threeViewController.m */; };
+		841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73CF1F50017900F31BF6 /* BaseNavigationController.m */; };
+		841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73D21F50118E00F31BF6 /* HomePageListViewController.m */; };
 		9777F9030BA72B03D95C39A9 /* libPods-news_learningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 230EB72C7FD0519272A563E8 /* libPods-news_learningTests.a */; };
 		B468CA9605DA7A29EF207E7D /* libPods-news_learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA14FA945B69B164204FAD /* libPods-news_learning.a */; };
 /* End PBXBuildFile section */
@@ -66,6 +71,16 @@
 		841D73BE1F4D524300F31BF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		841D73BF1F4E889700F31BF6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		841D73C01F4E889700F31BF6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		841D73C51F50013500F31BF6 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		841D73C61F50013500F31BF6 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		841D73C81F50014200F31BF6 /* twoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twoViewController.h; sourceTree = "<group>"; };
+		841D73C91F50014200F31BF6 /* twoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = twoViewController.m; sourceTree = "<group>"; };
+		841D73CB1F50014D00F31BF6 /* threeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeViewController.h; sourceTree = "<group>"; };
+		841D73CC1F50014D00F31BF6 /* threeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeViewController.m; sourceTree = "<group>"; };
+		841D73CE1F50017900F31BF6 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		841D73CF1F50017900F31BF6 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		841D73D11F50118E00F31BF6 /* HomePageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageListViewController.h; sourceTree = "<group>"; };
+		841D73D21F50118E00F31BF6 /* HomePageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageListViewController.m; sourceTree = "<group>"; };
 		D3309939E9DF4199AC1CB56A /* Pods-news_learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learning/Pods-news_learning.debug.xcconfig"; sourceTree = "<group>"; };
 		F933587914ED9306DB303947 /* Pods-news_learningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learningUITests/Pods-news_learningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +253,8 @@
 			children = (
 				841D73BF1F4E889700F31BF6 /* BaseViewController.h */,
 				841D73C01F4E889700F31BF6 /* BaseViewController.m */,
+				841D73CE1F50017900F31BF6 /* BaseNavigationController.h */,
+				841D73CF1F50017900F31BF6 /* BaseNavigationController.m */,
 				841D73C41F4E892100F31BF6 /* ThreeViewController */,
 				841D73C31F4E890500F31BF6 /* TwoViewController */,
 				841D73C21F4E88D500F31BF6 /* OneViewController */,
@@ -283,6 +300,10 @@
 		841D73C21F4E88D500F31BF6 /* OneViewController */ = {
 			isa = PBXGroup;
 			children = (
+				841D73C51F50013500F31BF6 /* OneViewController.h */,
+				841D73C61F50013500F31BF6 /* OneViewController.m */,
+				841D73D11F50118E00F31BF6 /* HomePageListViewController.h */,
+				841D73D21F50118E00F31BF6 /* HomePageListViewController.m */,
 			);
 			path = OneViewController;
 			sourceTree = "<group>";
@@ -290,6 +311,8 @@
 		841D73C31F4E890500F31BF6 /* TwoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				841D73C81F50014200F31BF6 /* twoViewController.h */,
+				841D73C91F50014200F31BF6 /* twoViewController.m */,
 			);
 			path = TwoViewController;
 			sourceTree = "<group>";
@@ -297,6 +320,8 @@
 		841D73C41F4E892100F31BF6 /* ThreeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				841D73CB1F50014D00F31BF6 /* threeViewController.h */,
+				841D73CC1F50014D00F31BF6 /* threeViewController.m */,
 			);
 			path = ThreeViewController;
 			sourceTree = "<group>";
@@ -372,7 +397,7 @@
 		841D73711F4D288D00F31BF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NW;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = com.taihe;
 				TargetAttributes = {
@@ -477,9 +502,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-news_learning/Pods-news_learning-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -593,9 +621,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				841D73841F4D288D00F31BF6 /* ViewController.m in Sources */,
+				841D73C71F50013500F31BF6 /* OneViewController.m in Sources */,
+				841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */,
 				841D73C11F4E889700F31BF6 /* BaseViewController.m in Sources */,
+				841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */,
 				841D73811F4D288D00F31BF6 /* AppDelegate.m in Sources */,
 				841D737E1F4D288D00F31BF6 /* main.m in Sources */,
+				841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */,
+				841D73CA1F50014200F31BF6 /* twoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

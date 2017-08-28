@@ -10,4 +10,6 @@
 
 @interface threeViewController : BaseViewController
 
++ (UINavigationController *)defultNavi;
+
 @end

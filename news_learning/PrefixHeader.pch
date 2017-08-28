@@ -14,7 +14,41 @@
 
 #import "const.h"
 
+
 // 最低只需传两个数组即可完成tabBar搭建
 #import <CYLTabBarController.h>
+
+
+//优秀的替换NSLog的第三方，更加省资源
+#import <CocoaLumberjack.h>
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
+// SDAutoLayout
+#import <SDAutoLayout/UIView+SDAutoLayout.h>
+#import <SDAutoLayout/UITableView+SDAutoTableViewCellHeight.h>
+
+// SDWebImage
+#import <UIImageView+WebCache.h>
+
+//优秀的滚动视图头部和脚步刷新效果
+#import <MJRefresh.h>
+
+//改变系统的target+selector模式为 block模式,带来紧凑的代码风格，高效率的回调执行
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+
+//Github排名第一的第三方网络请求类库，封装了系统的NSURLSession+NSOperation
+#import <AFNetworking.h>
+//对UIKit类添加类拓展，让UIImageView、UIButton等拥有了网络加载图片的功能
+#import <UIKit+AFNetworking.h>
+
+//方便形成如同网易新闻首页，控制器滑动翻页效果的控制器
+#import <WMPageController.h>
+
 
 #endif /* PrefixHeader_pch */

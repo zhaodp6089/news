@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 
-@interface OneViewController : BaseViewController
+@interface OneViewController : WMPageController
+
++ (UINavigationController *)defultNavi;
 
 @end

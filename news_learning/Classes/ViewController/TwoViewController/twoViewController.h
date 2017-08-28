@@ -10,4 +10,6 @@
 
 @interface twoViewController : BaseViewController
 
++ (UINavigationController *)defultNavi;
+
 @end
