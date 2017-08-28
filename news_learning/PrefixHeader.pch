@@ -34,8 +34,11 @@ static const int ddLogLevel = DDLogLevelError;
 // SDWebImage
 #import <UIImageView+WebCache.h>
 
+#import <MBProgressHUD.h>
+
 //优秀的滚动视图头部和脚步刷新效果
 #import <MJRefresh.h>
+#import <MJExtension.h>
 
 //改变系统的target+selector模式为 block模式,带来紧凑的代码风格，高效率的回调执行
 #import <BlocksKit.h>

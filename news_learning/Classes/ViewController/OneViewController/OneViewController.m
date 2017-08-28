@@ -48,9 +48,9 @@
         self.titleSizeSelected = 18;
         self.menuViewStyle = WMMenuViewStyleFloodHollow;
         self.menuItemWidth = 55;
-        self.automaticallyCalculatesItemWidths = YES;
-        
-    }
+        self.automaticallyCalculatesItemWidths = YES;
+        
+    }
     return self;
 }
 

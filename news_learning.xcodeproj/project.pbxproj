@@ -22,6 +22,11 @@
 		841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73CC1F50014D00F31BF6 /* threeViewController.m */; };
 		841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73CF1F50017900F31BF6 /* BaseNavigationController.m */; };
 		841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D73D21F50118E00F31BF6 /* HomePageListViewController.m */; };
+		841D744E1F5408DF00F31BF6 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D744D1F5408DF00F31BF6 /* BaseNetManager.m */; };
+		841D74521F540A8700F31BF6 /* NSObject+Hint.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D74511F540A8700F31BF6 /* NSObject+Hint.m */; };
+		841D74561F540E2F00F31BF6 /* HomePageNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D74551F540E2F00F31BF6 /* HomePageNetManager.m */; };
+		841D745A1F54147900F31BF6 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D74591F54147900F31BF6 /* BaseModel.m */; };
+		841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D745D1F54152200F31BF6 /* HomePageModel.m */; };
 		9777F9030BA72B03D95C39A9 /* libPods-news_learningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 230EB72C7FD0519272A563E8 /* libPods-news_learningTests.a */; };
 		B468CA9605DA7A29EF207E7D /* libPods-news_learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA14FA945B69B164204FAD /* libPods-news_learning.a */; };
 /* End PBXBuildFile section */
@@ -81,6 +86,16 @@
 		841D73CF1F50017900F31BF6 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		841D73D11F50118E00F31BF6 /* HomePageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageListViewController.h; sourceTree = "<group>"; };
 		841D73D21F50118E00F31BF6 /* HomePageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageListViewController.m; sourceTree = "<group>"; };
+		841D744C1F5408DF00F31BF6 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		841D744D1F5408DF00F31BF6 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		841D74501F540A8700F31BF6 /* NSObject+Hint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Hint.h"; sourceTree = "<group>"; };
+		841D74511F540A8700F31BF6 /* NSObject+Hint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Hint.m"; sourceTree = "<group>"; };
+		841D74541F540E2F00F31BF6 /* HomePageNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageNetManager.h; sourceTree = "<group>"; };
+		841D74551F540E2F00F31BF6 /* HomePageNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNetManager.m; sourceTree = "<group>"; };
+		841D74581F54147900F31BF6 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		841D74591F54147900F31BF6 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		841D745C1F54152200F31BF6 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
+		841D745D1F54152200F31BF6 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
 		D3309939E9DF4199AC1CB56A /* Pods-news_learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learning/Pods-news_learning.debug.xcconfig"; sourceTree = "<group>"; };
 		F933587914ED9306DB303947 /* Pods-news_learningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learningUITests/Pods-news_learningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +220,7 @@
 		841D73B21F4D45D200F31BF6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				841D744F1F540A4B00F31BF6 /* Category */,
 				841D73BC1F4D47AC00F31BF6 /* Other */,
 				841D73BB1F4D479D00F31BF6 /* Resource */,
 				841D73BA1F4D479100F31BF6 /* Vendor */,
@@ -230,6 +246,9 @@
 		841D73B41F4D468100F31BF6 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				841D744C1F5408DF00F31BF6 /* BaseNetManager.h */,
+				841D744D1F5408DF00F31BF6 /* BaseNetManager.m */,
+				841D74531F540DE700F31BF6 /* HomePageManager */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -237,6 +256,9 @@
 		841D73B51F4D46EE00F31BF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				841D74581F54147900F31BF6 /* BaseModel.h */,
+				841D74591F54147900F31BF6 /* BaseModel.m */,
+				841D745B1F54148400F31BF6 /* HomePageModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +346,33 @@
 				841D73CC1F50014D00F31BF6 /* threeViewController.m */,
 			);
 			path = ThreeViewController;
+			sourceTree = "<group>";
+		};
+		841D744F1F540A4B00F31BF6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				841D74501F540A8700F31BF6 /* NSObject+Hint.h */,
+				841D74511F540A8700F31BF6 /* NSObject+Hint.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		841D74531F540DE700F31BF6 /* HomePageManager */ = {
+			isa = PBXGroup;
+			children = (
+				841D74541F540E2F00F31BF6 /* HomePageNetManager.h */,
+				841D74551F540E2F00F31BF6 /* HomePageNetManager.m */,
+			);
+			path = HomePageManager;
+			sourceTree = "<group>";
+		};
+		841D745B1F54148400F31BF6 /* HomePageModel */ = {
+			isa = PBXGroup;
+			children = (
+				841D745C1F54152200F31BF6 /* HomePageModel.h */,
+				841D745D1F54152200F31BF6 /* HomePageModel.m */,
+			);
+			path = HomePageModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,9 +672,14 @@
 				841D73841F4D288D00F31BF6 /* ViewController.m in Sources */,
 				841D73C71F50013500F31BF6 /* OneViewController.m in Sources */,
 				841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */,
+				841D74561F540E2F00F31BF6 /* HomePageNetManager.m in Sources */,
 				841D73C11F4E889700F31BF6 /* BaseViewController.m in Sources */,
 				841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */,
 				841D73811F4D288D00F31BF6 /* AppDelegate.m in Sources */,
+				841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */,
+				841D745A1F54147900F31BF6 /* BaseModel.m in Sources */,
+				841D744E1F5408DF00F31BF6 /* BaseNetManager.m in Sources */,
+				841D74521F540A8700F31BF6 /* NSObject+Hint.m in Sources */,
 				841D737E1F4D288D00F31BF6 /* main.m in Sources */,
 				841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */,
 				841D73CA1F50014200F31BF6 /* twoViewController.m in Sources */,
