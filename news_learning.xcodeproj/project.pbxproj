@@ -27,6 +27,10 @@
 		841D74561F540E2F00F31BF6 /* HomePageNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D74551F540E2F00F31BF6 /* HomePageNetManager.m */; };
 		841D745A1F54147900F31BF6 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D74591F54147900F31BF6 /* BaseModel.m */; };
 		841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D745D1F54152200F31BF6 /* HomePageModel.m */; };
+		84CA976B1F56925E00F6419E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA976A1F56925E00F6419E /* BaseViewModel.m */; };
+		84CA97701F5692CB00F6419E /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA976F1F5692CB00F6419E /* HomePageViewModel.m */; };
+		84CA97761F56A27700F6419E /* HomePageViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97741F56A27700F6419E /* HomePageViewTableViewCell.m */; };
+		84CA97771F56A27700F6419E /* HomePageViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */; };
 		9777F9030BA72B03D95C39A9 /* libPods-news_learningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 230EB72C7FD0519272A563E8 /* libPods-news_learningTests.a */; };
 		B468CA9605DA7A29EF207E7D /* libPods-news_learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA14FA945B69B164204FAD /* libPods-news_learning.a */; };
 /* End PBXBuildFile section */
@@ -96,6 +100,13 @@
 		841D74591F54147900F31BF6 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		841D745C1F54152200F31BF6 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
 		841D745D1F54152200F31BF6 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
+		84CA97691F56925E00F6419E /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewModel.h; path = ViewModel/BaseViewModel.h; sourceTree = "<group>"; };
+		84CA976A1F56925E00F6419E /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewModel.m; path = ViewModel/BaseViewModel.m; sourceTree = "<group>"; };
+		84CA976E1F5692CB00F6419E /* HomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewModel.h; sourceTree = "<group>"; };
+		84CA976F1F5692CB00F6419E /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
+		84CA97731F56A27700F6419E /* HomePageViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewTableViewCell.h; sourceTree = "<group>"; };
+		84CA97741F56A27700F6419E /* HomePageViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewTableViewCell.m; sourceTree = "<group>"; };
+		84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewTableViewCell.xib; sourceTree = "<group>"; };
 		D3309939E9DF4199AC1CB56A /* Pods-news_learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learning/Pods-news_learning.debug.xcconfig"; sourceTree = "<group>"; };
 		F933587914ED9306DB303947 /* Pods-news_learningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learningUITests/Pods-news_learningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,6 +277,7 @@
 		841D73B61F4D471300F31BF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84CA97711F56A23C00F6419E /* HomePageView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +299,9 @@
 		841D73B81F4D475900F31BF6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				84CA976D1F5692CB00F6419E /* HomePageViewModel */,
+				84CA97691F56925E00F6419E /* BaseViewModel.h */,
+				84CA976A1F56925E00F6419E /* BaseViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -373,6 +388,26 @@
 				841D745D1F54152200F31BF6 /* HomePageModel.m */,
 			);
 			path = HomePageModel;
+			sourceTree = "<group>";
+		};
+		84CA976D1F5692CB00F6419E /* HomePageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84CA976E1F5692CB00F6419E /* HomePageViewModel.h */,
+				84CA976F1F5692CB00F6419E /* HomePageViewModel.m */,
+			);
+			name = HomePageViewModel;
+			path = ViewModel/HomePageViewModel;
+			sourceTree = "<group>";
+		};
+		84CA97711F56A23C00F6419E /* HomePageView */ = {
+			isa = PBXGroup;
+			children = (
+				84CA97731F56A27700F6419E /* HomePageViewTableViewCell.h */,
+				84CA97741F56A27700F6419E /* HomePageViewTableViewCell.m */,
+				84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */,
+			);
+			path = HomePageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +529,7 @@
 			files = (
 				841D738C1F4D288D00F31BF6 /* LaunchScreen.storyboard in Resources */,
 				841D73891F4D288D00F31BF6 /* Assets.xcassets in Resources */,
+				84CA97771F56A27700F6419E /* HomePageViewTableViewCell.xib in Resources */,
 				841D73871F4D288D00F31BF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,13 +705,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA97701F5692CB00F6419E /* HomePageViewModel.m in Sources */,
 				841D73841F4D288D00F31BF6 /* ViewController.m in Sources */,
 				841D73C71F50013500F31BF6 /* OneViewController.m in Sources */,
 				841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */,
 				841D74561F540E2F00F31BF6 /* HomePageNetManager.m in Sources */,
+				84CA976B1F56925E00F6419E /* BaseViewModel.m in Sources */,
 				841D73C11F4E889700F31BF6 /* BaseViewController.m in Sources */,
 				841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */,
 				841D73811F4D288D00F31BF6 /* AppDelegate.m in Sources */,
+				84CA97761F56A27700F6419E /* HomePageViewTableViewCell.m in Sources */,
 				841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */,
 				841D745A1F54147900F31BF6 /* BaseModel.m in Sources */,
 				841D744E1F5408DF00F31BF6 /* BaseNetManager.m in Sources */,

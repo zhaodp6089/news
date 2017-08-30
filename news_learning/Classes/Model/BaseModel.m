@@ -10,6 +10,6 @@
 
 @implementation BaseModel
 
-MJExtensionCodingImplementation;
+MJCodingImplementation
 
 @end

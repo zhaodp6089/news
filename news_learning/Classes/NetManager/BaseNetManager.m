@@ -22,7 +22,7 @@
     return manager;
 }
 
-+ (id)get:(NSString *)path params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler {
++ (id)get:(NSString *)path params:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))completionHandler {
     NSLog(@"path: %@, params: %@", path, params);
     return [[self defaultAFManager] GET:path parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         completionHandler(responseObject, nil);

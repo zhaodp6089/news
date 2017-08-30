@@ -7,11 +7,11 @@
 //
 
 #import "HomePageNetManager.h"
-#import "HomePageModel.h"
+
 
 @implementation HomePageNetManager
 
-+ (id)getNewsListType:(NewsListType)type lastTime:(NSString *)lastTime page:(NSInteger)page completionHandler:(void (^)(id, NSError *))completionHandler {
++ (id)getNewsListType:(NewsListType)type lastTime:(NSString *)lastTime page:(NSInteger)page completionHandler:(void(^)(id model, NSError *error))completionHandler {
     NSString *path = nil;
     switch (type) {
         case NewsListTypeZuiXin: {

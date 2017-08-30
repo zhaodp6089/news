@@ -8,6 +8,10 @@
 
 #import "HomePageModel.h"
 
+@implementation HomePageModel
+
+
+@end
 
 @implementation HomeResultModel
 /** 属性为数组 对应相应的解析类 */

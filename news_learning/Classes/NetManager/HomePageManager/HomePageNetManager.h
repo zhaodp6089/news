@@ -7,6 +7,7 @@
 //
 
 #import "BaseNetManager.h"
+#import "HomePageModel.h"
 
 typedef NS_ENUM(NSUInteger, NewsListType) {
     NewsListTypeZuiXin,  //最新
@@ -22,6 +23,6 @@ typedef NS_ENUM(NSUInteger, NewsListType) {
 
 @interface HomePageNetManager : BaseNetManager
 
-+ (id)getNewsListType:(NewsListType)type lastTime:(NSString *)lastTime page:(NSInteger)page kCompletionHandler;
++ (id)getNewsListType:(NewsListType)type lastTime:(NSString *)lastTime page:(NSInteger)page completionHandler:(void(^)(id model, NSError *error))completionHandler;
 
 @end
