@@ -31,6 +31,9 @@ static const int ddLogLevel = DDLogLevelError;
 #import <SDAutoLayout/UIView+SDAutoLayout.h>
 #import <SDAutoLayout/UITableView+SDAutoTableViewCellHeight.h>
 
+#import <Masonry.h>
+
+
 // SDWebImage
 #import <UIImageView+WebCache.h>
 

@@ -7,8 +7,11 @@
 //
 
 #import "threeViewController.h"
+#import "WordViewController.h"
 
 @interface threeViewController ()
+
+@property (nonatomic , strong) NSArray *titleData;
 
 @end
 
@@ -18,31 +21,67 @@
     static UINavigationController *navi = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        navi = [[BaseNavigationController alloc] initWithRootViewController:[[self class] new]];
+        threeViewController *rootvc = [[threeViewController alloc] init];
+        navi = [[BaseNavigationController alloc] initWithRootViewController:rootvc];
     });
     return navi;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        
+        self.titleSizeNormal = 17;
+        self.titleSizeSelected = 18;
+        self.menuViewStyle = WMMenuViewStyleFloodHollow;
+        self.menuItemWidth = 55;
+        self.automaticallyCalculatesItemWidths = YES;
+        self.showOnNavigationBar = YES;
+        
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor redColor];
+}
+#pragma mark 标题数组
+- (NSArray *)titleData {
+    if (!_titleData) {
+        _titleData = @[@"段子",@"图片",@"视频"];
+    }
+    return _titleData;
+}
+#pragma mark - Datasource & Delegate
+
+#pragma mark 返回子页面的个数
+- (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController {
+    return self.titleData.count;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark 返回某个index对应的页面
+- (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
+    
+    
+    WordViewController *vcClass = [[WordViewController alloc] init];
+    
+    vcClass.title = @"1";
+    vcClass.view.backgroundColor = [UIColor greenColor];
+    return vcClass;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark 返回index对应的标题
+- (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {
+    
+    return self.titleData[index];
 }
-*/
+- (CGFloat)menuView:(WMMenuView *)menu widthForItemAtIndex:(NSInteger)index {
+    CGFloat width = [super menuView:menu widthForItemAtIndex:index];
+    return width + 15;
+}
+
+
 
 @end

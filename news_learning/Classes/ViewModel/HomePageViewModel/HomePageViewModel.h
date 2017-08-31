@@ -12,11 +12,13 @@
 
 @interface HomePageViewModel : BaseViewModel
 
+- (instancetype)initWithType:(NewsListType)type;
 
 @property (nonatomic, strong) NSArray *cycleImageArr;
 @property (nonatomic, assign) NSInteger page;
+@property (nonatomic, assign) NewsListType type;
+@property (nonatomic, strong) NSString *lastTime;
 
-- (void)homePageLoadDataWith:(NewsListType)type Page:(NSInteger)page LastTime:(NSString *)lastTime completionHandler:(void(^)(NSError *error))completionHandler;
 
 - (NSString *)titleForRow:(NSInteger)row;
 

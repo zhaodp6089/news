@@ -28,14 +28,12 @@
     return navi;
 }
 
-+ (NSArray *)itemNames {
-    return @[@"最新",@"新闻",@"评测",@"导购",@"用车",@"技术",@"文化",@"改装",@"游记",];
-}
+
 
 #pragma mark 标题数组
 - (NSArray *)titleData {
     if (!_titleData) {
-        _titleData = @[@"最新",@"新闻新闻新闻",@"评测",@"导购",@"用车",@"技术",@"文化",@"改装",@"游记"];
+        _titleData = @[@"最新",@"新闻",@"评测",@"导购",@"用车",@"技术",@"文化",@"改装",@"游记"];
     }
     return _titleData;
 }
@@ -44,9 +42,9 @@
     if (self = [super init]) {
         
         
-        self.titleSizeNormal = 16;
+        self.titleSizeNormal = 17;
         self.titleSizeSelected = 18;
-        self.menuViewStyle = WMMenuViewStyleFloodHollow;
+        self.menuViewStyle = WMMenuViewStyleLine;
         self.menuItemWidth = 55;
         self.automaticallyCalculatesItemWidths = YES;
         
@@ -66,46 +64,11 @@
 - (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
     
     
-    switch (index) {
-        case 0:{
-            
-            HomePageListViewController   *vcClass = [[HomePageListViewController alloc] init];
-            vcClass.title = @"1";
-            vcClass.view.backgroundColor = [UIColor greenColor];
-            
-            return vcClass;
-        }
-            
-            break;
-        case 1:{
-            
-            HomePageListViewController *vcClass = [HomePageListViewController new];
-            vcClass.title = @"2";
-            vcClass.view.backgroundColor = [UIColor grayColor];
-            return vcClass;
-            
-        }
-            break;
-        case 2:{
-            
-            HomePageListViewController *vcClass = [HomePageListViewController new];
-            vcClass.title = @"3";
-            return vcClass;
-            
-        }
-            break;
-            
-        default:{
-            
-            HomePageListViewController *vcClass = [HomePageListViewController new];
-            vcClass.title = @"4";
-            return vcClass;
-            
-        }
-            
-            break;
-    }
-    
+    HomePageListViewController   *vcClass = [[HomePageListViewController alloc] init];
+    vcClass.typeValue = index;
+    vcClass.title = @"1";
+    vcClass.view.backgroundColor = [UIColor greenColor];
+    return vcClass;
     
 }
 
@@ -114,42 +77,16 @@
     
     return self.titleData[index];
 }
-
-
-
-
-+ (NSArray *)viewControllerClasses {
-    NSMutableArray *mArr = [NSMutableArray new];
-    for (int i = 0; i < [self itemNames].count; i++) {
-        [mArr addObject:[OneViewController class]];
-    }
-    return [mArr copy];
-}
-
-+ (NSArray *)vcKeys {
-    NSMutableArray *mArr = [NSMutableArray new];
-    for (int i = 0; i < [self itemNames].count; i++) {
-        [mArr addObject:@"infoType"];
-    }
-    return [mArr copy];
-}
-
-+ (NSArray *)vcValues {
-    NSMutableArray *mArr = [NSMutableArray new];
-    for (int i = 0; i < [self itemNames].count; i++) {
-        [mArr addObject:@(i)];
-    }
-    return [mArr copy];
+- (CGFloat)menuView:(WMMenuView *)menu widthForItemAtIndex:(NSInteger)index {
+    CGFloat width = [super menuView:menu widthForItemAtIndex:index];
+    return width + 15;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationItem.title = @"one";
-    self.view.backgroundColor = [UIColor orangeColor];
-    
-    
+    self.navigationItem.title = @"首页";
 }
 
 

@@ -10,4 +10,6 @@
 
 @interface HomePageListViewController : BaseViewController
 
+@property (nonatomic, assign) NSInteger typeValue;
+
 @end

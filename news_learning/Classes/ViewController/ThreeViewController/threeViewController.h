@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface threeViewController : BaseViewController
+@interface threeViewController : WMPageController
 
 + (UINavigationController *)defultNavi;
 

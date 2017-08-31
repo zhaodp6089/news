@@ -31,6 +31,11 @@
 		84CA97701F5692CB00F6419E /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA976F1F5692CB00F6419E /* HomePageViewModel.m */; };
 		84CA97761F56A27700F6419E /* HomePageViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97741F56A27700F6419E /* HomePageViewTableViewCell.m */; };
 		84CA97771F56A27700F6419E /* HomePageViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */; };
+		84CA977B1F57E86200F6419E /* WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA977A1F57E86200F6419E /* WordViewController.m */; };
+		84CA977F1F57FAC700F6419E /* wordNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA977E1F57FAC700F6419E /* wordNetManager.m */; };
+		84CA97831F57FCB800F6419E /* wordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97821F57FCB800F6419E /* wordModel.m */; };
+		84CA978A1F57FF8500F6419E /* WordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97891F57FF8400F6419E /* WordViewModel.m */; };
+		84CA978E1F58070600F6419E /* WordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA978D1F58070600F6419E /* WordTableViewCell.m */; };
 		9777F9030BA72B03D95C39A9 /* libPods-news_learningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 230EB72C7FD0519272A563E8 /* libPods-news_learningTests.a */; };
 		B468CA9605DA7A29EF207E7D /* libPods-news_learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA14FA945B69B164204FAD /* libPods-news_learning.a */; };
 /* End PBXBuildFile section */
@@ -107,6 +112,16 @@
 		84CA97731F56A27700F6419E /* HomePageViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewTableViewCell.h; sourceTree = "<group>"; };
 		84CA97741F56A27700F6419E /* HomePageViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewTableViewCell.m; sourceTree = "<group>"; };
 		84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewTableViewCell.xib; sourceTree = "<group>"; };
+		84CA97791F57E86200F6419E /* WordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordViewController.h; sourceTree = "<group>"; };
+		84CA977A1F57E86200F6419E /* WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewController.m; sourceTree = "<group>"; };
+		84CA977D1F57FAC700F6419E /* wordNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordNetManager.h; sourceTree = "<group>"; };
+		84CA977E1F57FAC700F6419E /* wordNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wordNetManager.m; sourceTree = "<group>"; };
+		84CA97811F57FCB800F6419E /* wordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordModel.h; sourceTree = "<group>"; };
+		84CA97821F57FCB800F6419E /* wordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wordModel.m; sourceTree = "<group>"; };
+		84CA97881F57FF8400F6419E /* WordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordViewModel.h; sourceTree = "<group>"; };
+		84CA97891F57FF8400F6419E /* WordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewModel.m; sourceTree = "<group>"; };
+		84CA978C1F58070600F6419E /* WordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewCell.h; sourceTree = "<group>"; };
+		84CA978D1F58070600F6419E /* WordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewCell.m; sourceTree = "<group>"; };
 		D3309939E9DF4199AC1CB56A /* Pods-news_learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learning/Pods-news_learning.debug.xcconfig"; sourceTree = "<group>"; };
 		F933587914ED9306DB303947 /* Pods-news_learningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learningUITests/Pods-news_learningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +274,7 @@
 			children = (
 				841D744C1F5408DF00F31BF6 /* BaseNetManager.h */,
 				841D744D1F5408DF00F31BF6 /* BaseNetManager.m */,
+				84CA977C1F57FA5C00F6419E /* threeNetManager */,
 				841D74531F540DE700F31BF6 /* HomePageManager */,
 			);
 			path = NetManager;
@@ -269,6 +285,7 @@
 			children = (
 				841D74581F54147900F31BF6 /* BaseModel.h */,
 				841D74591F54147900F31BF6 /* BaseModel.m */,
+				84CA97801F57FC2300F6419E /* threeHomeModel */,
 				841D745B1F54148400F31BF6 /* HomePageModel */,
 			);
 			path = Model;
@@ -277,6 +294,7 @@
 		841D73B61F4D471300F31BF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84CA978B1F5806C200F6419E /* ThreeView */,
 				84CA97711F56A23C00F6419E /* HomePageView */,
 			);
 			path = View;
@@ -299,6 +317,7 @@
 		841D73B81F4D475900F31BF6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				84CA97841F57FF1500F6419E /* ThreeViewModel */,
 				84CA976D1F5692CB00F6419E /* HomePageViewModel */,
 				84CA97691F56925E00F6419E /* BaseViewModel.h */,
 				84CA976A1F56925E00F6419E /* BaseViewModel.m */,
@@ -359,6 +378,7 @@
 			children = (
 				841D73CB1F50014D00F31BF6 /* threeViewController.h */,
 				841D73CC1F50014D00F31BF6 /* threeViewController.m */,
+				84CA97781F57E7E900F6419E /* threeListControllers */,
 			);
 			path = ThreeViewController;
 			sourceTree = "<group>";
@@ -408,6 +428,51 @@
 				84CA97751F56A27700F6419E /* HomePageViewTableViewCell.xib */,
 			);
 			path = HomePageView;
+			sourceTree = "<group>";
+		};
+		84CA97781F57E7E900F6419E /* threeListControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CA97791F57E86200F6419E /* WordViewController.h */,
+				84CA977A1F57E86200F6419E /* WordViewController.m */,
+			);
+			path = threeListControllers;
+			sourceTree = "<group>";
+		};
+		84CA977C1F57FA5C00F6419E /* threeNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				84CA977D1F57FAC700F6419E /* wordNetManager.h */,
+				84CA977E1F57FAC700F6419E /* wordNetManager.m */,
+			);
+			path = threeNetManager;
+			sourceTree = "<group>";
+		};
+		84CA97801F57FC2300F6419E /* threeHomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				84CA97811F57FCB800F6419E /* wordModel.h */,
+				84CA97821F57FCB800F6419E /* wordModel.m */,
+			);
+			path = threeHomeModel;
+			sourceTree = "<group>";
+		};
+		84CA97841F57FF1500F6419E /* ThreeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84CA97881F57FF8400F6419E /* WordViewModel.h */,
+				84CA97891F57FF8400F6419E /* WordViewModel.m */,
+			);
+			path = ThreeViewModel;
+			sourceTree = "<group>";
+		};
+		84CA978B1F5806C200F6419E /* ThreeView */ = {
+			isa = PBXGroup;
+			children = (
+				84CA978C1F58070600F6419E /* WordTableViewCell.h */,
+				84CA978D1F58070600F6419E /* WordTableViewCell.m */,
+			);
+			path = ThreeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +772,8 @@
 			files = (
 				84CA97701F5692CB00F6419E /* HomePageViewModel.m in Sources */,
 				841D73841F4D288D00F31BF6 /* ViewController.m in Sources */,
+				84CA977B1F57E86200F6419E /* WordViewController.m in Sources */,
+				84CA97831F57FCB800F6419E /* wordModel.m in Sources */,
 				841D73C71F50013500F31BF6 /* OneViewController.m in Sources */,
 				841D73CD1F50014D00F31BF6 /* threeViewController.m in Sources */,
 				841D74561F540E2F00F31BF6 /* HomePageNetManager.m in Sources */,
@@ -714,12 +781,15 @@
 				841D73C11F4E889700F31BF6 /* BaseViewController.m in Sources */,
 				841D73D01F50017900F31BF6 /* BaseNavigationController.m in Sources */,
 				841D73811F4D288D00F31BF6 /* AppDelegate.m in Sources */,
+				84CA978A1F57FF8500F6419E /* WordViewModel.m in Sources */,
 				84CA97761F56A27700F6419E /* HomePageViewTableViewCell.m in Sources */,
 				841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */,
 				841D745A1F54147900F31BF6 /* BaseModel.m in Sources */,
 				841D744E1F5408DF00F31BF6 /* BaseNetManager.m in Sources */,
 				841D74521F540A8700F31BF6 /* NSObject+Hint.m in Sources */,
 				841D737E1F4D288D00F31BF6 /* main.m in Sources */,
+				84CA977F1F57FAC700F6419E /* wordNetManager.m in Sources */,
+				84CA978E1F58070600F6419E /* WordTableViewCell.m in Sources */,
 				841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */,
 				841D73CA1F50014200F31BF6 /* twoViewController.m in Sources */,
 			);

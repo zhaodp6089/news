@@ -19,6 +19,7 @@ target 'news_learning' do
     pod 'SDWebImage', '~> 4.1.0'
     pod 'SDAutoLayout', '~> 2.2.0'
     pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'Masonry', '~> 1.0.2'
 
   target 'news_learningTests' do
     inherit! :search_paths
