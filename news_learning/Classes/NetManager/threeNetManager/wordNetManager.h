@@ -12,5 +12,6 @@
 @interface wordNetManager : BaseNetManager
 
 + (id)getWordDataWithPage:(NSInteger)page completionHandler:(void(^)(id model, NSError *error))completionHandler;
++ (id)getPicDataWithSetID:(NSInteger)setID completionHandler:(void(^)(id model, NSError *error))completionHandler;
 
 @end

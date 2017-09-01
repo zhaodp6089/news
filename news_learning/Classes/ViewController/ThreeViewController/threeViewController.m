@@ -8,6 +8,7 @@
 
 #import "threeViewController.h"
 #import "WordViewController.h"
+#import "PicViewController.h"
 
 @interface threeViewController ()
 
@@ -63,12 +64,28 @@
 #pragma mark 返回某个index对应的页面
 - (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
     
-    
-    WordViewController *vcClass = [[WordViewController alloc] init];
-    
-    vcClass.title = @"1";
-    vcClass.view.backgroundColor = [UIColor greenColor];
-    return vcClass;
+    switch (index) {
+            case 0:
+        {
+            WordViewController *vcClass = [[WordViewController alloc] init];
+            return vcClass;
+        }
+            break;
+            
+            case 1:
+        {
+            PicViewController *vcClass = [[PicViewController alloc] init];
+            return vcClass;
+        }
+            break;
+            
+        default:
+        {
+            WordViewController *vcClass = [[WordViewController alloc] init];
+            return vcClass;
+        }
+            break;
+    }
     
 }
 

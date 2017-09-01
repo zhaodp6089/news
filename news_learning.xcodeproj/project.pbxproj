@@ -36,6 +36,10 @@
 		84CA97831F57FCB800F6419E /* wordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97821F57FCB800F6419E /* wordModel.m */; };
 		84CA978A1F57FF8500F6419E /* WordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97891F57FF8400F6419E /* WordViewModel.m */; };
 		84CA978E1F58070600F6419E /* WordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA978D1F58070600F6419E /* WordTableViewCell.m */; };
+		84CA97911F58F66A00F6419E /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97901F58F66900F6419E /* PicViewController.m */; };
+		84CA97941F58FDE600F6419E /* PicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97931F58FDE600F6419E /* PicTableViewCell.m */; };
+		84CA97971F59043500F6419E /* PicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97961F59043500F6419E /* PicViewModel.m */; };
+		84CA979A1F59240400F6419E /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA97991F59240400F6419E /* MyImageView.m */; };
 		9777F9030BA72B03D95C39A9 /* libPods-news_learningTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 230EB72C7FD0519272A563E8 /* libPods-news_learningTests.a */; };
 		B468CA9605DA7A29EF207E7D /* libPods-news_learning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DEA14FA945B69B164204FAD /* libPods-news_learning.a */; };
 /* End PBXBuildFile section */
@@ -122,6 +126,14 @@
 		84CA97891F57FF8400F6419E /* WordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewModel.m; sourceTree = "<group>"; };
 		84CA978C1F58070600F6419E /* WordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewCell.h; sourceTree = "<group>"; };
 		84CA978D1F58070600F6419E /* WordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewCell.m; sourceTree = "<group>"; };
+		84CA978F1F58F66900F6419E /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
+		84CA97901F58F66900F6419E /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
+		84CA97921F58FDE600F6419E /* PicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTableViewCell.h; sourceTree = "<group>"; };
+		84CA97931F58FDE600F6419E /* PicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTableViewCell.m; sourceTree = "<group>"; };
+		84CA97951F59043500F6419E /* PicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewModel.h; sourceTree = "<group>"; };
+		84CA97961F59043500F6419E /* PicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewModel.m; sourceTree = "<group>"; };
+		84CA97981F59240400F6419E /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageView.h; sourceTree = "<group>"; };
+		84CA97991F59240400F6419E /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageView.m; sourceTree = "<group>"; };
 		D3309939E9DF4199AC1CB56A /* Pods-news_learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learning/Pods-news_learning.debug.xcconfig"; sourceTree = "<group>"; };
 		F933587914ED9306DB303947 /* Pods-news_learningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news_learningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news_learningUITests/Pods-news_learningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +340,8 @@
 		841D73B91F4D477F00F31BF6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				84CA97981F59240400F6419E /* MyImageView.h */,
+				84CA97991F59240400F6419E /* MyImageView.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -435,6 +449,8 @@
 			children = (
 				84CA97791F57E86200F6419E /* WordViewController.h */,
 				84CA977A1F57E86200F6419E /* WordViewController.m */,
+				84CA978F1F58F66900F6419E /* PicViewController.h */,
+				84CA97901F58F66900F6419E /* PicViewController.m */,
 			);
 			path = threeListControllers;
 			sourceTree = "<group>";
@@ -462,6 +478,8 @@
 			children = (
 				84CA97881F57FF8400F6419E /* WordViewModel.h */,
 				84CA97891F57FF8400F6419E /* WordViewModel.m */,
+				84CA97951F59043500F6419E /* PicViewModel.h */,
+				84CA97961F59043500F6419E /* PicViewModel.m */,
 			);
 			path = ThreeViewModel;
 			sourceTree = "<group>";
@@ -471,6 +489,8 @@
 			children = (
 				84CA978C1F58070600F6419E /* WordTableViewCell.h */,
 				84CA978D1F58070600F6419E /* WordTableViewCell.m */,
+				84CA97921F58FDE600F6419E /* PicTableViewCell.h */,
+				84CA97931F58FDE600F6419E /* PicTableViewCell.m */,
 			);
 			path = ThreeView;
 			sourceTree = "<group>";
@@ -786,12 +806,16 @@
 				841D745E1F54152200F31BF6 /* HomePageModel.m in Sources */,
 				841D745A1F54147900F31BF6 /* BaseModel.m in Sources */,
 				841D744E1F5408DF00F31BF6 /* BaseNetManager.m in Sources */,
+				84CA979A1F59240400F6419E /* MyImageView.m in Sources */,
 				841D74521F540A8700F31BF6 /* NSObject+Hint.m in Sources */,
+				84CA97971F59043500F6419E /* PicViewModel.m in Sources */,
 				841D737E1F4D288D00F31BF6 /* main.m in Sources */,
 				84CA977F1F57FAC700F6419E /* wordNetManager.m in Sources */,
 				84CA978E1F58070600F6419E /* WordTableViewCell.m in Sources */,
+				84CA97941F58FDE600F6419E /* PicTableViewCell.m in Sources */,
 				841D73D31F50118E00F31BF6 /* HomePageListViewController.m in Sources */,
 				841D73CA1F50014200F31BF6 /* twoViewController.m in Sources */,
+				84CA97911F58F66A00F6419E /* PicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,29 +1,28 @@
 //
-//  WordViewController.m
+//  PicViewController.m
 //  news_learning
 //
-//  Created by admin on 2017/8/31.
+//  Created by admin on 2017/9/1.
 //  Copyright © 2017年 com.taihe. All rights reserved.
 //
 
-#import "WordViewController.h"
-#import "WordTableViewCell.h"
-#import "WordViewModel.h"
+#import "PicViewController.h"
+#import "PicTableViewCell.h"
+#import "PicViewModel.h"
 
-@interface WordViewController ()<UITabBarDelegate, UITableViewDataSource>
+@interface PicViewController ()<UITabBarDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) WordViewModel *viewModel;
+@property (nonatomic, strong) PicViewModel *viewModel;
+
 
 @end
 
-@implementation WordViewController
+@implementation PicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     [self.tableView.mj_header beginRefreshing];
     
 }
@@ -38,15 +37,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"HomePageViewTableViewCell -------- ");
-    WordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    PicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     if (!cell) {
-        cell = [[WordTableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cellID"];
+        cell = [[PicTableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cellID"];
     }
-    cell.contentLB.text = [self.viewModel contentText:indexPath.row];
-    [cell.zanBtn bk_addEventHandler:^(id sender) {
-        
-    } forControlEvents:(UIControlEventTouchUpInside)];
-    cell.dateLB.text = @"没有加文字！";
+    [cell.iconIV sd_setImageWithURL:[NSURL URLWithString:[self.viewModel iconURLsForRow:indexPath.row][0]] placeholderImage:nil ];
+    cell.titleLB.text = [self.viewModel titleForRow:indexPath.row];
+    cell.browseNum.text = [self.viewModel browseNumForRow:indexPath.row];
     return cell;
 }
 
@@ -78,11 +75,10 @@
     }
     return _tableView;
 }
-- (WordViewModel *)viewModel {
+- (PicViewModel *)viewModel {
     if (!_viewModel) {
-        _viewModel = [[WordViewModel alloc] init];
+        _viewModel = [PicViewModel new];
     }
     return _viewModel;
 }
-
 @end
